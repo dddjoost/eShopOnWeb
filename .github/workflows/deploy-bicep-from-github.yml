@@ -19,7 +19,7 @@ jobs:
             - name: deploy
               uses: azure/arm-deploy@v1
               with:
-                  subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+                  subscriptionId: ${{ secrets.SUBSCRIPTIONID }}
                   resourceGroupName: ${{ AZURE_RG }}
                   template: ./main.bicep
                   parameters: storagePrefix=stg
